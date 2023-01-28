@@ -1,0 +1,248 @@
+<!-- html code goes here -->
+<!-- html code goes here -->
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;" id="sidebar">
+  <button id="close" class="w3-bar-item w3-button w3-large"
+  onclick="wclose()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="open" class="w3-button w3-teal w3-xlarge" onclick="wopen()">&#9776;</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+<img src="img_car.jpg" alt="Car" style="width:100%">
+
+<div class="w3-container">
+<p>In this example, the sidebar is hidden (style="display:none")</p>
+<p>It is shown when you click on the menu icon in the top left corner.</p>
+<p>When it is opened, it shifts the page content to the right.</p>
+<p>We use JavaScript to add a 25% left margin to the div element with id="main" when this happens. The value "25%" matches the width of the sidebar.</p>
+</div>
+
+</div>
+<script>
+function wopen() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("sidebar").style.width = "25%";
+  document.getElementById("sidebar").style.display = "block";
+  document.getElementById("open").style.display = 'none';
+}
+function wclose() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("sidebar").style.display = "none";
+  document.getElementById("open").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>
+
+/* css code goes here */
+.box {
+
+border: 2px solid black;
+
+padding: 12px;
+
+border-radius: 6px;
+
+max-width: 500px;
+
+text-align: center;
+
+margin: 10px;
+
+}
+
+.box .box-title {
+
+font-size: x-large;
+
+font-weight: bolder;
+
+margin: 10px;
+
+}
+
+.box .box-subtitle {
+
+margin-top: 0;
+
+margin-bottom: 16px;
+
+}
+
+.colors {
+
+min-height: 100px;
+
+margin: 10px;
+
+}
+
+.txt {
+
+min-width: 200px;
+
+max-width: 200px;
+
+margin: 10px;
+
+min-height: 100px;
+
+padding: 10px;
+
+}
+
+.color-box {
+
+min-width: 50px !important;
+
+min-height: 25px !important;
+
+border-radius: 5px !important;
+
+}
+
+.progress {
+
+max-width: 500px;
+
+border: 2px solid black;
+
+border-radius: 15px !important;
+
+padding: 0% !important;
+
+margin-right: 10px;
+
+}
+
+.filters {
+
+margin: 20px;
+
+}
+
+.button {
+
+margin: 20px;
+
+min-width: 200px;
+
+}
+
+.form {
+
+padding: 20px;
+
+}
+
+.remove {
+
+display: none ;
+
+}
+
+/* The side navigation menu */
+
+.drawer {
+
+height: 100%;
+
+/* 100% Full-height */
+
+width: 0;
+
+/* 0 width - change this with JavaScript */
+
+position: fixed;
+
+/* Stay in place */
+
+z-index: 1;
+
+/* Stay on top */
+
+top: 0;
+
+/* Stay at the top */
+
+right: 0;
+
+-webkit-box-shadow: -9px 4px 32px -15px rgba(0, 0, 0, 1);
+
+-moz-box-shadow: -9px 4px 32px -15px rgba(0, 0, 0, 1);
+
+box-shadow: -9px 4px 32px -15px rgba(0, 0, 0, 1);
+
+overflow-x: hidden;
+
+/* Disable horizontal scroll */
+
+padding-top: 60px;
+
+/* Place content 60px from the top */
+
+transition: 0.5s;
+
+/* 0.5 second transition effect to slide in the drawer */
+
+}
+
+/* Position and style the close button (top right corner) */
+
+.drawer .closebtn {
+
+position: absolute;
+
+color: black;
+
+text-decoration: none;
+
+top: 0;
+
+right: 25px;
+
+font-size: 36px;
+
+margin-left: 50px;
+
+}
+
+// javascript code goes here
+// javascript code goes here
+function w3_open() {
+
+document.getElementById('main').style.marginLeft = '25%';
+
+document.getElementById('sidebar').style.width = '25%';
+
+document.getElementById('sidebar').style.display = 'block';
+
+document.getElementById('open').style.display = 'none';
+
+}
+
+function w3_close() {
+
+document.getElementById('main').style.marginLeft = '0%';
+
+document.getElementById('sidebar').style.display = 'none';
+
+document.getElementById('open').style.display = 'inline-block';
+
+}
