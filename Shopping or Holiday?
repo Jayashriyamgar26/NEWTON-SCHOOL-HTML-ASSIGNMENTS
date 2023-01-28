@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <ol>
+          <li data-ns-test="shoppingList">Mobile</li>
+          <li data-ns-test="shoppingList">Laptop</li>
+          <li data-ns-test="shoppingList">Car</li>  
+        </ol>
+        <ul>
+            <li data-ns-test="holidayList">Goa</li>
+            <li data-ns-test="holidayList">Kashmir</li>
+            <li data-ns-test="holidayList">Uti</li>
+        </ul>
+    </body
+</html>
